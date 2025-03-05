@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panache - Premium Sustainable Handbags</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#D4AF37',
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?ixlib=rb-4.0.3') center/cover;
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-montserrat text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/logos%2FScreenshot_2025-02-27_223611-removebg-preview.png?alt=media&token=bff90cbe-bf08-4060-b154-3eab6e078ebb" alt="Panache Logo" class="h-12">
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-brand-gold transition">Home</a>
+                <a href="#shop" class="hover:text-brand-gold transition">Shop</a>
+                <a href="#about" class="hover:text-brand-gold transition">About</a>
+                <a href="#contact" class="hover:text-brand-gold transition">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-brand-gold"><i class="bi bi-search"></i></a>
+                <a href="#" class="hover:text-brand-gold"><i class="bi bi-bag"></i></a>
+                <button class="md:hidden"><i class="bi bi-list text-2xl"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient h-screen flex items-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-cinzel text-5xl md:text-7xl mb-6">Sustainable Luxury</h1>
+            <p class="text-xl mb-8">Crafted from innovative cactus leather</p>
+            <a href="#shop" class="bg-brand-gold text-black px-8 py-3 rounded-full hover:bg-white transition">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="font-cinzel text-3xl text-center mb-12">New Arrivals</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Noir Elegance -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2FIMG-20250227-WA0003.jpg?alt=media&token=6ab01d19-04cc-4778-8b5d-73f4ba775e4c" alt="Noir Elegance" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-cinzel text-xl mb-2">Noir Elegance</h3>
+                        <p class="text-gray-600 mb-2">Sophisticated cactus leather tote</p>
+                        <p class="text-brand-gold font-semibold">$349</p>
+                        <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-brand-gold transition">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Regal Grace -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2FIMG-20250227-WA0004.jpg?alt=media&token=574820ca-3b2e-4104-8af1-d48158d1a304" alt="Regal Grace" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-cinzel text-xl mb-2">Regal Grace</h3>
+                        <p class="text-gray-600 mb-2">Elegant cactus leather handbag</p>
+                        <p class="text-brand-gold font-semibold">$299</p>
+                        <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-brand-gold transition">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Opulent Poise -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/widecanvas-d0dd4.appspot.com/o/additional-images%2FIMG-20250227-WA0005.jpg?alt=media&token=720fab73-88c9-457f-b974-7e73342d8587" alt="Opulent Poise" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-cinzel text-xl mb-2">Opulent Poise</h3>
+                        <p class="text-gray-600 mb-2">Luxurious cactus leather clutch</p>
+                        <p class="text-brand-gold font-semibold">$259</p>
+                        <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-brand-gold transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Feature -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="font-cinzel text-3xl text-center mb-12">Our Commitment to Sustainability</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="bi bi-leaf text-5xl text-brand-gold mb-4"></i>
+                    <h3 class="font-cinzel text-xl mb-2">Cactus Leather</h3>
+                    <p>Innovative, sustainable alternative to traditional leather</p>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-droplet text-5xl text-brand-gold mb-4"></i>
+                    <h3 class="font-cinzel text-xl mb-2">Water Conservation</h3>
+                    <p>Minimal water usage in our production process</p>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-recycle text-5xl text-brand-gold mb-4"></i>
+                    <h3 class="font-cinzel text-xl mb-2">Zero Waste</h3>
+                    <p>Eco-friendly packaging and production methods</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-cinzel text-3xl mb-6">Our Story</h2>
+                    <p class="mb-4">At Panache, we believe luxury should never compromise our planet. Our innovative use of cactus leather represents a perfect harmony between sophistication and sustainability.</p>
+                    <p>Each bag is carefully crafted to ensure both environmental responsibility and timeless elegance.</p>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?ixlib=rb-4.0.3" alt="Craftsmanship" class="rounded-lg">
+                    <div class="absolute -bottom-4 -right-4 bg-brand-gold text-black p-4 rounded">
+                        <p class="font-cinzel">Sustainable Luxury Since 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-cinzel text-3xl mb-6">Join Our Community</h2>
+            <p class="mb-8">Subscribe to receive updates on new collections and sustainable fashion insights</p>
+            <form class="max-w-md mx-auto">
+                <div class="flex gap-4">
+                    <input type="email" placeholder="Your email address" class="flex-1 px-4 py-2 rounded-full border">
+                    <button type="submit" class="bg-black text-white px-8 py-2 rounded-full hover:bg-brand-gold transition">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-cinzel text-xl mb-4">Panache</h3>
+                    <p class="text-gray-400">Sustainable luxury for the conscious consumer</p>
+                </div>
+                <div>
+                    <h3 class="font-cinzel text-xl mb-4">Shop</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Best Sellers</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Collections</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-cinzel text-xl mb-4">Help</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Shipping</a></li>
+                        <li><a href="#" class="hover:text-brand-gold">Returns</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-cinzel text-xl mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-brand-gold"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="hover:text-brand-gold"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="hover:text-brand-gold"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Panache. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.md\\:hidden').addEventListener('click', function() {
+            const mobileMenu = document.querySelector('.md\\:flex');
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('w-full');
+            mobileMenu.classList.toggle('bg-black');
+            mobileMenu.classList.toggle('p-4');
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
